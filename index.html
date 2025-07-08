@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Counter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="score-counter">
+      <div class="score-counter__main">
+        <!-- Team A: Home -->
+        <section class="team team--home">
+          <h2 class="team__title">Home</h2>
+          <div class="team__score-wrapper">
+            <h3 class="team__score" id="team-home-score">0</h3>
+          </div>
+          <div class="team__controls">
+            <button
+              class="team__button team__button--plus1"
+              onclick="addScoreToTeamHome(1)"
+            >
+              +1
+            </button>
+            <button
+              class="team__button team__button--plus2"
+              onclick="addScoreToTeamHome(2)"
+            >
+              +2
+            </button>
+            <button
+              class="team__button team__button--plus3"
+              onclick="addScoreToTeamHome(3)"
+            >
+              +3
+            </button>
+          </div>
+        </section>
+
+        <!-- Team B: Guest -->
+        <section class="team team--guest">
+          <h2 class="team__title">Guest</h2>
+          <div class="team__score-wrapper">
+            <h3 class="team__score" id="team-guest-score">0</h3>
+          </div>
+          <div class="team__controls">
+            <button
+              class="team__button team__button--plus1"
+              onclick="addScoreToTeamGuest(1)"
+            >
+              +1
+            </button>
+            <button
+              class="team__button team__button--plus2"
+              onclick="addScoreToTeamGuest(2)"
+            >
+              +2
+            </button>
+            <button
+              class="team__button team__button--plus3"
+              onclick="addScoreToTeamGuest(3)"
+            >
+              +3
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Reset Button -->
+      <footer class="score-counter__footer">
+        <button class="score-counter__reset-button" onclick="reset()">
+          Reset
+        </button>
+      </footer>
+
+      <script src="./counter.js"></script>
+    </div>
+  </body>
+</html>

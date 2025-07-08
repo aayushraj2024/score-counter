@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "digital";
+  src: url("./asset/font/digital-7.ttf");
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: #eff6e0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  color: #2f3e46;
+}
+
+/* ========= Score Counter Layout ========= */
+
+.score-counter {
+  max-width: 45rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: #1b244a;
+  color: #eee;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.score-counter__main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  gap: 6rem;
+  text-align: center;
+}
+
+/* ========= Team Section ========= */
+
+.team {
+  max-width: 500px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.team__title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.team__score-wrapper {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 1rem auto;
+  background-color: #080001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.team__score {
+  font-size: 7rem;
+  font-weight: 400;
+  font-family: "digital";
+}
+
+/* ========= Score Buttons ========= */
+
+.team__controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  gap: 1rem;
+}
+
+.team__button {
+  flex: 1;
+  max-width: 100px;
+  aspect-ratio: 1/1;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "digital";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #eee;
+  background: transparent;
+  color: #eee;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.team__button:hover {
+  background-color: #374785;
+}
+
+.team__button:active {
+  background-color: #24305e;
+  transform: scale(0.98);
+}
+
+/* ========= Footer ========= */
+
+.score-counter__footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.score-counter__reset-button {
+  margin: 3rem 0 2rem;
+  padding: 0.6rem 1.6rem;
+  border: 2px solid #eee;
+  background: transparent;
+  color: #eee;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.score-counter__reset-button:hover {
+  background-color: #f94f6d;
+}
+
+.score-counter__reset-button:active {
+  background-color: #f50e38;
+  transform: scale(0.96);
+}
