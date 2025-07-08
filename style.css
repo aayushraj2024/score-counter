@@ -28,8 +28,9 @@ body {
   margin: 0 auto;
   background-color: #1b244a;
   color: #eee;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid #eee;
 }
 
 .score-counter__main {
